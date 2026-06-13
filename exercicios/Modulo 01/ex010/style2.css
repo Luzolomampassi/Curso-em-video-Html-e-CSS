@@ -1,0 +1,14 @@
+body{background: linear-gradient(180deg, #f3c9ff 0%, #8b2bd9 100%);
+margin: 0;
+height: 100vh;
+background-size: cover;
+}
+
+.btn-pag1{color: rgb(0, 0, 0);
+padding: 6px;
+background: linear-gradient(120deg,rgb(28, 142, 87),rgb(43, 206, 70));
+border-radius: 12px;
+display: flex;
+justify-content: flex-start;
+align-items: flex-end;
+transform:translateY(440px);}

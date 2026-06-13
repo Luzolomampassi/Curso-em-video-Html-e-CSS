@@ -1,0 +1,32 @@
+h1{color: white;}
+body{background: linear-gradient(#00ffaa,#000000);}
+.tela{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    
+}
+.tela2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ body {
+background-color: black;
+color: white;
+display: flex;
+flex-direction: column;
+align-items: center; /* centraliza na horizontal */
+justify-content: center; /* centraliza na vertical */
+min-height: 100vh; /* ocupa toda a tela */
+}
+.video, .link {
+    margin: 20px;
+    text-align: center;
+}
+.link a {
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+}

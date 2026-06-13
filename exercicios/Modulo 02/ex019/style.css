@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background:linear-gradient(to right, #1f6367, #61aab5);
+    color: #000100;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 18px;
+}
+h1 {
+    color: #0d101a; 
+}
+h1#principal{
+    color: #000000;
+    text-align: center;
+    background-color: #2c5b65;
+}
+
+h2 {
+    color:#28545C;
+    text-align: center;
+}
+.basico {
+    color:  #29881d;
+    background-color: #2c5b65;
+    padding: 10px;
+}
+.intermediario {
+    color:  #86881d;
+    background-color: #2c5b65;  
+    
+    padding: 10px;
+}
+.avancado {
+    color: #881d1d;
+    background-color: #2c5b65;
+
+    padding: 10px;
+}

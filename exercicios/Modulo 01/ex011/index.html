@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navagador</p>
+    <!--Fazendo um condicional de imagem dependendo do tamanho da tela -->
+    <picture>
+         <source media="(max-width:750px)" srcset="imagem/foto-p.png" type="image/png">
+
+        <source media="(max-width:1000px )" srcset="imagem/foto-m.png" type="image/png">
+       
+        <img src="imagem/foto-g.png" alt="imagem flexivel">
+        <!--Reproduzindo audio com a tag <audio>-->
+    </picture>
+    
+      <h1>reproduzindo audio</h1>
+      <p>vamos aprender a reproduzir audio</p>
+    
+
+  <div class="sound">
+    <audio preload="metadata" autoplay controls loop>
+      <source src="midia/on the flip the grey room density time.mp3" type="audio/mpeg">
+      <source src="midia/on the flip the grey room density time.ogg" type="audio/ogg">
+      <source src="midia/on the flip the grey room density time.wav" type="audio/wav">
+      <p>infelizemente seu navagador não consegue reproduzir audio </p>
+      <a href="midia/on the flip the grey room density time.mp3" download="musica">clique aqui para baixar</a>
+    </audio>
+    
+  </div>
+</body>
+</html>

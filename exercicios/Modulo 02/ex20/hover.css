@@ -1,0 +1,77 @@
+ body{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+background-image: linear-gradient(to right,#141939,#031793b6);
+}
+/*------------Barra de navegação--------------*/
+.barra_navegacao{
+    display: flex;
+    justify-content: space-around;
+    background-color: #838282;
+    padding: 10px;
+    border-radius: 20px;
+}
+nav ul {
+list-style: none; 
+margin: 0;
+padding: 0;
+display: flex; 
+justify-content: center;
+}
+nav ul li {
+margin-right: 20px; /* Espaçamento entre os itens */
+
+}
+nav ul li a {
+display: flex;
+padding: 14px 20px;
+color: white;
+text-decoration: none;
+}
+
+.contentor{background-color: whitesmoke;border-radius: 15px;padding: 3px;
+height:300px;
+text-align: center;
+margin: 10px;}
+
+/*Efeito hover para os contentor*/
+.contentor:hover{
+background-color: black;
+transition: 0.7s;
+border-radius: 30px;
+color: white;
+box-shadow: 5px 5px 10px rgba(4, 97, 147, 0.925);
+}
+
+/*Texto escondido*/
+.escondido > p {display: none;}
+.escondido:hover > p {display: block;
+background-color: black;
+color: wheat;
+}
+/*Div de cartões*/
+.cards {
+display: flex;
+justify-content: space-between; /* esquerda, centro, direita */
+padding: 20px;
+margin: 20px;
+}
+/*Cartões*/
+.card {
+    padding: 30px;
+    width: 300px;
+    height: 140px;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(4, 97, 147, 0.925);
+}
+/*Efeito hover para os cartões*/
+
+.card:hover{
+    background-color: black;
+    transition: 0.9s;
+    border-radius: 30px;
+    color: white;
+    box-shadow: 5px 5px 10px rgba(4, 97, 147, 0.925);
+}
+
+
