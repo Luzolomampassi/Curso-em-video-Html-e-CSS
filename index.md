@@ -6,4 +6,4 @@ title: Página inicial
 
 Bem-vindo ao meu site em Jekyll.
 
-<a href="https://luzolomampassi.github.io/Curso-em-video-Html-e-CSS/exercicios"></a>
+<a href="https://luzolomampassi.github.io/Curso-em-video-Html-e-CSS/exercicios">Paste de exericios</a>
