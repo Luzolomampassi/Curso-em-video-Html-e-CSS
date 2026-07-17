@@ -8,7 +8,25 @@
 |telas grandes: acima de 1200px |
 |===============================|
 */
-
+@media print{
+    body{
+      font-family: 'Courier New', Courier, monospace;
+   
+      
+    }
+    main{
+        border: 2px solid black;
+        width: 90vh;
+    }
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+    main::after{
+        content: 'Essa impressão foi feita através do site www.cursoemvideo.com';
+        
+    }
+}
 @media screen and (min-width:768px) and (max-width:992px){/*Tablet*/
     body{
         background-image: url(../imagens/back-tablet.jpg);
@@ -36,11 +54,16 @@
      body{
         background-image: url(../imagens/back-tv.jpg);
     }
+    main{
+        width: 700px;
+    }
     #phone{display: none;}
     #tablet{display: none;}
     #print{display: none;}
     #desktop{display: none;}
     #tv{display: block;}
+    
+    
     
 }
 
