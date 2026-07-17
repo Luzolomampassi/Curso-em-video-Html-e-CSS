@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testanto Media Queries</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non rerum alias error facere reiciendis numquam in laborum placeat enim at? Quae amet totam, provident exercitationem odio debitis! Quis, soluta quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque qui, explicabo laborum enim molestiae unde provident dicta non debitis eaque eveniet voluptatibus dolor cum! Deleniti, harum laudantium. Quo, soluta iusto.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam illo laboriosam quod tenetur non ducimus repellendus ratione consequatur soluta. Quod obcaecati eos, sapiente odio ipsam molestias natus laudantium perspiciatis maiores! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure distinctio quia culpa quod aut maiores numquam quo, voluptatem unde praesentium placeat deleniti facere perspiciatis, aliquid odit beatae a voluptate officiis.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam totam nobis iure, incidunt odio tempore assumenda similique officia delectus, est veritatis dolore omnis fuga provident sed itaque facere, officiis numquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, sit facere quia optio odio hic quis consequatur assumenda incidunt totam est corporis quam praesentium deleniti error quo veniam. Enim, blanditiis.</p>
+        </article>
+    </main>
+    <script>
+        function clickMenu() {
+            if(itens.style.display == 'block'){
+                itens.style.display = 'none'
+            } else{
+                itens.style.display = 'block'
+            }
+            
+        }
+    </script>
+</body>
+</html>
