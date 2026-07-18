@@ -1,7 +1,144 @@
 @charset  "UTF8";
-
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
 :root{
-    --color-green:#49a09d;
-    --color-lilas:#5f2c82;
+    --color-green:#48b7b3;
+    --color-purple:#5f2c82;
+}
+body,html{
+    height: 100vh;
+    width: 100vw;
+    background-color:var(--color-purple);
+
+   
+}
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+#login{
+    position: absolute;
+    background-color: white;
+    width: 250px;
+    height: 520px;
+    border-radius: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.455);
+    transition: width .3s , height .3s , ease;
     
 }
+#login h1{
+    text-align: center;
+}
+
+#login > #imagem{
+    display: block;
+    background: #5f2c82 url(../imagens/building.jpg) no-repeat;
+    background-position:  left bottom;
+    height: 200px;
+    background-size: cover;
+}
+#login > #formulario{
+    display: block;
+    padding: 10px;
+
+}
+.campo{
+    background-color: #5f2c82;
+    border: 2px solid #5f2c82;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+.campo label{
+    display: none;
+}
+.campo input{
+    background-color: #94cfcd;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateX(10px);
+}
+.icone{
+    color: white;
+}
+input[type='submit']{
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid var(--color-green);
+    display: block;
+    padding: 10px;
+    background-color: var(--color-green);
+    margin: 10px 0px;
+    width: 100%;
+    color: white;
+}
+
+.botao{
+    text-align: center;
+    display: block;
+    border: 1px solid var(--color-green);
+    color: var(--color-green);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+/*Tablet*/
+@media(min-width:768px) and (max-width:991px){
+    body{
+        background: linear-gradient(to bottom,#5f2c82,#48b7b3);
+    }
+    #login{
+        width: 80vw;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.506);
+    }
+      #login > #imagem{
+        float: left;
+        width: 30%;
+        height: 100%;
+    }   
+   
+    #formulario{
+        float: right;
+        width: 70%;
+        height: 100%;
+    }
+      
+}
+@media(min-width:992px){
+        body{
+        background: linear-gradient(to bottom,#5f2c82,#48b7b3);
+    }
+    #login{
+        width: 990vw;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.506);
+    }
+      #login > #imagem{
+        float: left;
+        width: 50%;
+        height: 100%;
+    }   
+   
+    #formulario{
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+      
+}
+    
+
