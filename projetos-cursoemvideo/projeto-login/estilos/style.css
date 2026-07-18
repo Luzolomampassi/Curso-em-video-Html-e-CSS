@@ -25,7 +25,7 @@ main{
     position: absolute;
     background-color: white;
     width: 250px;
-    height: 520px;
+    height: 500px;
     border-radius: 20px;
     top: 50%;
     left: 50%;
@@ -35,8 +35,12 @@ main{
     transition: width .3s , height .3s , ease;
     
 }
-#login h1{
+#formulario h1{
     text-align: center;
+    margin-bottom: 10px;
+}
+#formulario p{
+   font-size: 0.8em;
 }
 
 #login > #imagem{
@@ -59,43 +63,57 @@ main{
     border-radius: 8px;
     margin: 5px 0px;
 }
+
 .campo label{
     display: none;
 }
 .campo input{
     background-color: #94cfcd;
     font-size: 1em;
-    width: calc(100% - 45px);
+    width: calc(100% - 38px);
     height: 100%;
     border: 0px;
     border-radius: 8px;
     padding: 4px;
-    transform: translateX(10px);
+    transform: translateX(3px);
+}
+.campo > input:focus-within{
+    background-color: white;
+    border: none;
 }
 .icone{
     color: white;
+
 }
 input[type='submit']{
-    border-radius: 10px;
-    outline: none;
-    border: 1px solid var(--color-green);
     display: block;
-    padding: 10px;
-    background-color: var(--color-green);
-    margin: 10px 0px;
     width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 1em;
+    border: none;
+    background-color: var(--color-green);
     color: white;
+    cursor: pointer;
+}
+input[type='submit']:hover{
+    background-color: #2d6462;
 }
 
 .botao{
-    text-align: center;
     display: block;
-    border: 1px solid var(--color-green);
-    color: var(--color-green);
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 10px;
     width: 100%;
+    height: 40px;
+    margin-top: 5px;
+    text-align: center;
+    border: 1px solid var(--color-green);
+    color: #2d6462;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.botao:hover{
+    background-color: #6cd3cf;
+
 }
 /*Tablet*/
 @media(min-width:768px) and (max-width:991px){
@@ -104,6 +122,7 @@ input[type='submit']{
     }
     #login{
         width: 80vw;
+        max-height: 285px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.506);
     }
       #login > #imagem{
@@ -119,24 +138,34 @@ input[type='submit']{
     }
       
 }
+/*PC*/
+
 @media(min-width:992px){
         body{
         background: linear-gradient(to bottom,#5f2c82,#48b7b3);
     }
     #login{
-        width: 990vw;
+        width: 950px;
+        max-height: 330px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.506);
     }
       #login > #imagem{
-        float: left;
+        float: right;
         width: 50%;
         height: 100%;
     }   
    
     #formulario{
-        float: right;
+        float: left;
         width: 50%;
         height: 100%;
+    }
+     #formulario h1{
+     font-size: 2em;
+    }
+      
+    #formulario p{
+   font-size: 1.2em;
     }
       
 }
