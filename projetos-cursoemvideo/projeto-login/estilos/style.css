@@ -29,9 +29,10 @@ main{
     border-radius: 20px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.455);
+    transform: translate(-50%,-50%);
     transition: width .3s , height .3s , ease;
     
 }
