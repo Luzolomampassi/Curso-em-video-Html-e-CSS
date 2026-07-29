@@ -1,0 +1,26 @@
+.container{
+    display: grid;
+    grid-template: repeat(3,100px) / repeat(4,1fr);
+    gap: 5px;
+    grid-auto-rows: 100px;
+    grid-auto-columns: 1fr;
+}
+.caixa1{
+    grid-column: 1 / -1;
+    grid-area: 1 / 1 / 1 / -1;
+    background-color: darkred; 
+    
+}
+.caixa2{
+    grid-area:2/ 1 / -1  /3 ;
+    background-color: darkblue; 
+    
+
+}
+.caixa3{
+    background-color: darkgreen; 
+
+    
+    grid-area:2/ 3 / -1  /-1 ;
+
+}
